@@ -17,6 +17,7 @@ const initialFormData = Object.freeze({
     lastName: "",
     email: "",
     address1: "",
+    phone:"",
     city: "",
     employed:"false",
   });
@@ -103,10 +104,10 @@ const UserProfile = () => {
             <Paper style={{ padding: 16 }}>
               <Grid container alignItems="flex-start" spacing={2}>
                 <Grid item xs={4}>
-                    <TextField name="first Name" onChange={handleChange} label="First Name" />
+                    <TextField name="firstName" onChange={handleChange} label="First Name" />
                 </Grid>
                 <Grid item xs={4}>
-                    <TextField  name="last Name" onChange={handleChange} label="Last Name" />
+                    <TextField  name="lastName" onChange={handleChange} label="Last Name" />
                 </Grid>
                 <Grid item xs={4}>
                     <TextField  name="email" onChange={handleChange} label="Email" />
@@ -115,7 +116,7 @@ const UserProfile = () => {
                     <TextField  name="address1" onChange={handleChange} label="Address 1" />
                 </Grid>
                 <Grid item xs={4}>
-                    <TextField  name="address2" onChange={handleChange} label="Phone" />
+                    <TextField type="number" name="phone" onChange={handleChange} label="Phone" />
                 </Grid>
                 <Grid item xs={4}>
                     <TextField  name="city" onChange={handleChange} label="City" />
