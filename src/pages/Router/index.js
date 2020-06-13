@@ -5,10 +5,10 @@ const Links = () => {
   return (
     <ul>
       <li>
-        <NavLink to="/faq/swimming">Demo router One</NavLink>
+        <NavLink to="/router/one">Demo router One</NavLink>
       </li>
       <li>
-        <NavLink to="/faq/waterpolo">Demo router Two</NavLink>
+        <NavLink to="/router/two">Demo router Two</NavLink>
       </li>
     </ul>
   );
@@ -20,8 +20,8 @@ const DemoLinks = () => {
       <h1 className="Header">React Router</h1>
       <Links />
       <Switch>
-        <Route path="/faq/swimming" component={() => <div>Clicked Demo router One</div>} />
-        <Route path="/faq/waterpolo" component={() => <div>Clicked Demo router Two</div>} />
+        <Route path="/router/one" component={() => <div>Clicked Demo router One</div>} />
+        <Route path="/router/two" component={() => <div>Clicked Demo router Two</div>} />
       </Switch>
     </div>
   );

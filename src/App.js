@@ -12,7 +12,7 @@ function App() {
             <Redirect to="/one" component={Home} />
           </Route> */}
           <Route path="/one"  component={Home} />
-          <Route path="/faq" component={RouteDemo} />
+          <Route path="/router" component={RouteDemo} />
         </MainLayout>
       </Switch>
     </Router>

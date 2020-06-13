@@ -65,7 +65,7 @@ function MainLayout(props) {
           <NavLink activeOnlyWhenExact to="/one" icon={HomeIcon}>
             Home
           </NavLink>
-          <NavLink to="/faq" icon={RouterIcon}>
+          <NavLink to="/router" icon={RouterIcon}>
             Router
           </NavLink>
         </List>
