@@ -7,12 +7,11 @@ import Toolbar from "@material-ui/core/Toolbar";
 import List from "@material-ui/core/List";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
-// https://material-ui.com/style/icons/
 import HomeIcon from "@material-ui/icons/Home";
-import HelpIcon from "@material-ui/icons/HelpOutlined";
+import RouterIcon from '@material-ui/icons/Router';
 import NavLink from "./NavLink";
 
-// https://material-ui.com/demos/drawers/#full-height-navigation
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -46,10 +45,10 @@ function MainLayout(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            Title
+            User Directory
           </Typography>
           <div style={{ display: "flex", flex: 1 }} />
-          <Typography>Hello, Prof.</Typography>
+          <Typography>Hello, User</Typography>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -63,11 +62,11 @@ function MainLayout(props) {
         <div className={classes.toolbar} />
         <Divider />
         <List>
-          <NavLink activeOnlyWhenExact to="/" icon={HomeIcon}>
+          <NavLink activeOnlyWhenExact to="/one" icon={HomeIcon}>
             Home
           </NavLink>
-          <NavLink to="/faq" icon={HelpIcon}>
-            FAQ
+          <NavLink to="/faq" icon={RouterIcon}>
+            Router
           </NavLink>
         </List>
       </Drawer>

@@ -1,5 +1,12 @@
-import React from "react";
+import React from 'react'
+import Tabs from './tabs'
 
-export default function Home() {
-  return "Home";
+const index = () => {
+  return (
+    <div>
+      <Tabs />
+    </div>
+  )
 }
+
+export default index
